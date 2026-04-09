@@ -1,7 +1,7 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
   margin: 0;
-  background: #f7f7f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+  background: #f5f5f5;
   color: #333;
 }
 
@@ -11,31 +11,15 @@ header {
   padding: 12px 16px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.cart {
-  font-size: 14px;
-}
-
 /* リード */
 .lead {
-  padding: 20px 16px;
   background: #fff;
-  margin-bottom: 10px;
-}
-
-.lead h1 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  padding: 20px 16px;
 }
 
 .notice {
@@ -43,11 +27,11 @@ header {
   color: #666;
 }
 
-/* 商品一覧 */
+/* 商品 */
 .products {
-  padding: 10px;
   display: grid;
   gap: 12px;
+  padding: 12px;
 }
 
 @media(min-width: 768px){
@@ -56,50 +40,61 @@ header {
   }
 }
 
-/* カード */
 .card {
   background: #fff;
-  padding: 14px;
+  padding: 12px;
   border-radius: 10px;
   position: relative;
 }
 
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* バッジ */
 .badge {
   position: absolute;
   top: 10px;
   left: 10px;
-  background: #ff7a00;
+  background: orange;
   color: #fff;
   font-size: 12px;
   padding: 4px 6px;
   border-radius: 4px;
 }
 
+/* テキスト */
 .title {
   font-weight: bold;
-  margin-bottom: 6px;
+  margin-top: 8px;
+}
+
+.meta {
+  font-size: 13px;
+  color: #555;
 }
 
 .price {
   font-size: 18px;
   font-weight: bold;
-  margin: 8px 0;
+  margin: 6px 0;
 }
 
 .shipping {
   font-size: 13px;
-  color: #555;
 }
 
+/* 在庫 */
 .stock {
-  margin: 6px 0;
   font-size: 13px;
+  margin: 6px 0;
 }
 
-.stock.ok { color: green; }
-.stock.low { color: orange; }
-.stock.out { color: #999; }
-.stock.prep { color: #0077cc;}
+.ok { color: green; }
+.low { color: orange; }
+.prep { color: #0077cc; }
+.out { color: #999; }
 
 /* ボタン */
 button {
@@ -107,44 +102,31 @@ button {
   padding: 10px;
   border: none;
   border-radius: 6px;
-  font-size: 14px;
-  margin-top: 8px;
-  cursor: pointer;
-}
-
-.btn {
   background: #ff7a00;
-  color: white;
+  color: #fff;
+  margin-top: 8px;
 }
 
-.btn-low {
+button.low {
   background: #e55300;
-  color: white;
 }
 
-.btn-out {
+button.prep,
+button.out {
   background: #ccc;
   color: #666;
-  cursor: not-allowed;
-}
-/* 準備中ボタン */
-.btn-prep {
-  background: #e0e7ff;
-  color: #555;
-  cursor: not-allowed;
 }
 
 /* 補足 */
 .info {
   background: #fff;
-  padding: 20px 16px;
-  margin-top: 10px;
+  padding: 16px;
   font-size: 14px;
+  margin-top: 10px;
 }
 
 footer {
   text-align: center;
   font-size: 12px;
   padding: 20px;
-  color: #777;
 }

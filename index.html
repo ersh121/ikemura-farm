@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>いけむら農園</title>
-
-  <!-- CSS読み込み -->
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>パイナップル販売</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-  <div class="logo">いけむら農園</div>
-  <div class="cart">🛒 カート</div>
+  <div class="logo">沖縄パイン農園</div>
+  <div class="cart">🛒</div>
 </header>
 
 <section class="lead">
-  <h1>今年のパイナップル販売開始</h1>
+  <h1>今年のパイナップル販売</h1>
   <p>完熟収穫・農家直送でお届けします</p>
   <p class="notice">
     📦 6月上旬〜順次発送<br>
@@ -27,68 +25,62 @@
 
 <section class="products">
 
-  <!-- 商品1 -->
+  <!-- 人気商品 -->
   <div class="card">
-    <div class="badge">人気No.1</div>
+    <span class="badge">人気No.1</span>
+    <img src="img/pine-a.jpg" alt="">
     <div class="title">🍍 ピーチパインAセット</div>
-    <div>約3kg（3〜4玉）</div>
+    <div class="meta">約3kg（3〜4玉）</div>
     <div class="price">¥4,500</div>
     <div class="shipping">📦 6月上旬〜発送</div>
     <div class="stock ok">在庫あり</div>
-    <button class="btn" onclick="location.href='#'">カートに入れる</button>
+    <button onclick="location.href='#'">カートに入れる</button>
   </div>
 
-  <!-- 商品2 -->
+  <!-- 残りわずか -->
   <div class="card">
+    <img src="img/pine-b.jpg" alt="">
     <div class="title">🍍 ピーチパインBセット</div>
-    <div>約2kg</div>
+    <div class="meta">約2kg</div>
     <div class="price">¥3,200</div>
     <div class="shipping">📦 6月上旬〜発送</div>
     <div class="stock low">残りわずか</div>
-    <button class="btn-low" onclick="location.href='#'">急いで注文</button>
+    <button class="low" onclick="location.href='#'">急いで注文</button>
   </div>
 
-  <!-- 商品3 -->
+  <!-- 準備中 -->
   <div class="card">
+    <img src="img/pine-c.jpg" alt="">
     <div class="title">🍍 島パインFセット</div>
-    <div>約4kg</div>
+    <div class="meta">約4kg</div>
+    <div class="price">¥5,200</div>
+    <div class="shipping">📦 6月上旬〜発送予定</div>
+    <div class="stock prep">準備中</div>
+    <button class="prep" disabled>販売開始前</button>
+  </div>
+
+  <!-- 売り切れ -->
+  <div class="card">
+    <img src="img/pine-d.jpg" alt="">
+    <div class="title">🍍 島パインGセット</div>
+    <div class="meta">約4kg</div>
     <div class="price">¥5,200</div>
     <div class="shipping">📦 6月上旬〜発送</div>
     <div class="stock out">売り切れ</div>
-    <button class="btn-out" disabled>売り切れ</button>
+    <button class="out" disabled>売り切れ</button>
   </div>
-
-  <!-- 商品（準備中） -->
-<div class="card">
-  <div class="title">🍍 ピーチパインAセット</div>
-  <div>約3kg（3〜4玉）</div>
-  <div class="price">¥4,500</div>
-  <div class="shipping">📦 6月上旬〜発送予定</div>
-  
-  <div class="stock prep">準備中</div>
-  
-  <button class="btn-prep" disabled>販売開始前</button>
-</div>
 
 </section>
 
 <section class="info">
-  <p>■ ご注文について<br>
-  ご注文後、自動返信メールが届きます。</p>
-
-  <p>■ お支払い方法<br>
-  クレジットカード / コンビニ決済 / 銀行振込</p>
-
-  <p>■ 配送について<br>
-  ヤマト運輸でお届けします。</p>
-
-  <p>■ 注意事項<br>
-  天候により発送時期が前後する場合があります。</p>
+  <p>■ ご注文について<br>自動返信メールが届きます</p>
+  <p>■ お支払い<br>クレジット / コンビニ / 銀行振込</p>
+  <p>■ 配送<br>ヤマト運輸</p>
+  <p>■ 注意事項<br>天候により発送時期が前後します</p>
 </section>
 
 <footer>
-  沖縄パイン農園<br>
-  特定商取引法表記
+  沖縄パイン農園
 </footer>
 
 </body>
