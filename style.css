@@ -99,6 +99,7 @@ header {
 .stock.ok { color: green; }
 .stock.low { color: orange; }
 .stock.out { color: #999; }
+.stock.prep { color: #0077cc;}
 
 /* ボタン */
 button {
@@ -124,6 +125,12 @@ button {
 .btn-out {
   background: #ccc;
   color: #666;
+  cursor: not-allowed;
+}
+/* 準備中ボタン */
+.btn-prep {
+  background: #e0e7ff;
+  color: #555;
   cursor: not-allowed;
 }
 
