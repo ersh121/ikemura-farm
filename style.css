@@ -29,68 +29,87 @@ header {
   font-size: 16px;
 }
 
+/* 
 /* =========================
    ヒーロー
 ========================= */
 .hero {
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-.hero img {
+.hero-bg {
+  display: block;
   width: 100%;
-  height: 260px;
-  object-fit: cover;
+  height: auto;
 }
 
 /* =========================
-   ヒーローコピー（画像①②）
+   ヒーロー画像コピー
 ========================= */
 .hero-copy {
   position: absolute;
-  bottom: 20px;
-  left: 16px;
-  right: 16px;
-
+  left: 50%;
+  bottom: 8%;
+  transform: translateX(-50%);
   display: flex;
   align-items: flex-end;
-  gap: 12px;
+  justify-content: center;
+  gap: 2%;
+  width: 90%;
 }
 
-/* PC表示（横並び） */
-.copy1 {
-  width: 220px;
-}
-
-.copy2 {
-  width: 380px;
-}
-
-/* 影（視認性UP） */
 .copy1,
 .copy2 {
-  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
+  display: block;
+  height: auto;
 }
 
-/* スマホ */
-@media(max-width: 600px){
-  .hero img {
-    height: 220px;
+.copy1 {
+  width: 42%;
+  max-width: 520px;
+}
+
+.copy2 {
+  width: 22%;
+  max-width: 280px;
+}
+
+/* スマホ案 */
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+  }
+
+  .hero-bg {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
   }
 
   .hero-copy {
+    top: 50%;
+    bottom: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
     flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
+    align-items: center;
+    gap: 12px;
+    width: 85%;
   }
 
   .copy1 {
-    width: 160px;
+    width: 85%;
+    max-width: none;
   }
 
   .copy2 {
-    width: 260px;
+    width: 55%;
+    max-width: none;
   }
 }
+
 
 /* =========================
    商品一覧
@@ -183,7 +202,6 @@ button {
   font-size: 14px;
   font-weight: 500;
   margin-top: 8px;
-  cursor: pointer;
 }
 
 button.low {
@@ -194,7 +212,6 @@ button.prep,
 button.out {
   background: #ccc;
   color: #666;
-  cursor: not-allowed;
 }
 
 /* =========================
