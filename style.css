@@ -13,20 +13,58 @@ body {
 /* =========================
    ヘッダー
 ========================= */
+/* ヘッダー全体 */
 header {
-  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   padding: 14px 16px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
+/* ロゴ */
 .logo {
+  color:#333;
   font-weight: 700;
   font-size: 16px;
+}
+
+/* カート領域 */
+.cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;   
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* アイコン */
+.cart-icon {
+  width: 22px;
+  height: 22px;
+  fill: #333;
+  transition: 0.2s;
+}
+
+/* ホバー（PC） */
+.cart:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+.cart:hover .cart-icon {
+  fill: #000;
+}
+
+/* タップ時 */
+.cart:active {
+  background: rgba(0,0,0,0.1);
 }
 
 /* =========================
