@@ -29,75 +29,58 @@ header {
   font-size: 16px;
 }
 
-/* 
 /* =========================
    ヒーロー
 ========================= */
-..hero {
+.hero {
   position: relative;
-  width: 100%;
-  height: 520px;
-  overflow: hidden;
 }
 
-.hero-bg {
+.hero img {
   width: 100%;
-  height: 100%;
+  height: 260px;
   object-fit: cover;
-  display: block;
 }
 
-/* コピー全体 */
-.hero-copy {
+/* テキスト重ね */
+.hero-text {
   position: absolute;
-  inset: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  color: #fff;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0)
+  );
 }
 
-/* 左（メインコピー） */
-.copy1 {
-  position: absolute;
-  left: 8%;
-  top: 18%;
-  width: min(600px, 42vw);
-  height: auto;
+.lead-sub {
+  font-size: 12px;
+  margin-bottom: 4px;
+  opacity: 0.9;
 }
 
-/* 右（パイナップル） */
-.copy2 {
-  position: absolute;
-  right: 10%;
-  bottom: 12%;
-  width: min(420px, 28vw);
-  height: auto;
+.hero h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
 }
 
+.small-no {
+  font-size: 0.7em;
+}
 
-/* スマホ */
-@media screen and (max-width: 768px) {
-  .hero {
-    height: 65vh;
-  }
+.sub {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
 
-  .hero-bg {
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .copy1 {
-    position: absolute;
-    left: 50%;
-    top: 28%;
-    transform: translateX(-50%);
-    width: 85%;
-  }
-
-  .copy2 {
-    position: absolute;
-    left: 50%;
-    bottom: 12%;
-    transform: translateX(-50%);
-    width: 60%;
-  }
+.notice {
+  font-size: 13px;
 }
 
 /* =========================
