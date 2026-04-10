@@ -33,9 +33,16 @@
     <!-- PC用 -->
     <img src="img/hero-pc.jpg" alt="西表島のパイナップル">
   </picture>
+
+    <!-- スクロール誘導 -->
+<div class="scroll-down" onclick="scrollToProducts()">
+  <svg width="24" height="24" fill="#fff">
+    <path d="M12 16l-6-6h12z"/>
+  </svg>
+</div>
 </section>
 
-<section class="products">
+<section class="products" id="products">
 
   <div class="card">
     <span class="badge">人気No.1</span>
@@ -138,5 +145,12 @@
   沖縄パイン農園
 </footer>
 
+<script>
+  function scrollToProducts() {
+    document.getElementById('products').scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+</script>
 </body>
 </html>
