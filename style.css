@@ -250,6 +250,7 @@ footer {
   margin: 0 auto;
   display: block;
   animation: bounce 1.5s infinite;
+  text-align: center;
 }
 
 /* スマホで少し小さく */
@@ -271,7 +272,8 @@ footer {
 /* テキスト */
 .scroll-text {
   display: block;
-  font-size: 16px; /* ←変更 */
-  margin-bottom: 4px;
-  letter-spacing: 0.05em; /* 少しだけ整える */
+  font-size: 16px; 
+  margin-bottom: 6px;
+  letter-spacing: 0.08em;
+  text-align: center; 
 }
