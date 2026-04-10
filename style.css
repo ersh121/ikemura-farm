@@ -30,57 +30,34 @@ header {
 }
 
 /* =========================
-   ヒーロー
+   ヒーロー（画像切替）
 ========================= */
 .hero {
-  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
+/* picture対応 */
+.hero picture,
 .hero img {
   width: 100%;
-  height: 260px;
-  object-fit: cover;
+  display: block;
 }
 
-/* テキスト重ね */
-.hero-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 16px;
-  color: #fff;
-
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,0.65),
-    rgba(0,0,0,0)
-  );
+/* PC時の見え方安定 */
+@media (min-width: 769px) {
+  .hero img {
+    max-height: 600px;   /* PC画像サイズに合わせる */
+    object-fit: cover;
+  }
 }
 
-.lead-sub {
-  font-size: 12px;
-  margin-bottom: 4px;
-  opacity: 0.9;
-}
-
-.hero h1 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-
-.small-no {
-  font-size: 0.7em;
-}
-
-.sub {
-  font-size: 13px;
-  margin-bottom: 6px;
-}
-
-.notice {
-  font-size: 13px;
+/* スマホ */
+@media (max-width: 768px) {
+  .hero img {
+    max-height: 1000px;  /* SP画像サイズに合わせる */
+    object-fit: cover;
+  }
 }
 
 /* =========================
@@ -174,6 +151,7 @@ button {
   font-size: 14px;
   font-weight: 500;
   margin-top: 8px;
+  cursor: pointer;
 }
 
 button.low {
@@ -184,6 +162,7 @@ button.prep,
 button.out {
   background: #ccc;
   color: #666;
+  cursor: not-allowed;
 }
 
 /* =========================
