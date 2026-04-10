@@ -72,6 +72,7 @@ header {
    ヒーロー（画像切替）
 ========================= */
 .hero {
+  position: relative;
   width: 100%;
   overflow: hidden;
 }
