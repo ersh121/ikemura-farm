@@ -230,33 +230,14 @@ footer {
   position: absolute;
   bottom: 20px;
   left: 50%;
-  transform: translate(-50%, 0); 
-  text-align: center;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translate(-50%, 0);
-  }
-  50% {
-    transform: translate(-50%, 6px);
-  }
-}
-
-.scroll-arrow {
-  width: 26px;
-  height: 26px;
-  fill: #fff;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
+  transform: translate(-50%, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
- /* animation: bounce 1.5s infinite; */
+  /* animation: bounce 1.5s infinite; */
 }
 
-/* スマホで少し小さく */
+/* スマホ */
 @media (max-width: 768px) {
   .scroll-text {
     font-size: 14px;
@@ -269,24 +250,15 @@ footer {
 
   .scroll-down {
     bottom: 14px;
+    animation: bounce 1.5s infinite; 
   }
-}
-
-/* テキスト */
-.scroll-text {
-  display: block;
-  font-size: 16px; 
-  margin-bottom: 6px;
-  letter-spacing: 0.08em;
-  text-align: center; 
-  color: #fff;
 }
 
 /* =========================
    ガイドエリア
 ========================= */
 .guide {
-  background: #6aa81e; /* 緑ベース */
+  background: #6aa81e; 
   padding: 40px 16px;
   color: #fff;
 }
@@ -308,7 +280,7 @@ footer {
 .guide-card h3 {
   background: #e9e2c7;
   color: #5a7c1c;
-  padding: 10px 14px; /* 少し広げる */
+  padding: 10px 14px; 
   border-radius: 6px;
   font-size: 16px;
   margin-bottom: 14px;
@@ -323,7 +295,7 @@ footer {
 
 /* テキスト */
 .guide-card p {
-  margin: 6px 0; /* 少し広げる */
+  margin: 6px 0; 
   line-height: 1.8;
 }
 
@@ -349,7 +321,7 @@ footer {
 @media (max-width: 768px) {
   .guide-inner {
     flex-direction: column;
-    gap: 24px; /* ←追加（詰まり防止） */
+    gap: 24px; 
   }
 }
 
