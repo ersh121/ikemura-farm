@@ -234,6 +234,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: bounce 1.5s infinite; 
 }
 
 @keyframes bounce {
@@ -255,7 +256,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: bounce 1.5s infinite; 
 }
 
 /* スマホ */
