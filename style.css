@@ -301,6 +301,12 @@ footer {
   gap: 20px;
 }
 
+.guide img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
 /* カード */
 .guide-card {
   flex: 1;
@@ -344,12 +350,6 @@ footer {
   padding: 4px;
   border-radius: 4px;
   box-sizing: border-box;
-}
-
-.gaide-img {
-  width: 100%;
-  border-radius: 8px;
-  margin-top: 14px;
 }
 
 /* =========================
