@@ -346,6 +346,12 @@ footer {
   box-sizing: border-box;
 }
 
+.gaide-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 14px;
+}
+
 /* =========================
    スマホ対応
 ========================= */
