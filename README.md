@@ -1,13 +1,3 @@
 # ikemura-farm
-- いけむら農園のネットショップ
+- いけむら農園のネットショップ（仮）
 
-# ディレクトリ構成
-- index.html
-- style.css
-- img/
-
-# git エイリアス
-
-
-実行のコマンド
-```git deploy```
