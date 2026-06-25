@@ -84,6 +84,37 @@ header {
   display: block;
 }
 
+/* 動画 */
+.hero video{
+  width:100%;
+  display:block;
+}
+
+/* PCは動画 */
+.hero-video{
+  display:block;
+}
+
+/* スマホ画像は非表示 */
+.hero-sp{
+  display:none;
+}
+
+@media (max-width:768px){
+
+  /* スマホは動画非表示 */
+  .hero-video{
+    display:none;
+  }
+
+  /* スマホは画像表示 */
+  .hero-sp{
+    display:block;
+    width:100%;
+  }
+
+}
+
 /* PC時の見え方安定 */
 @media (min-width: 769px) {
   .hero img {
