@@ -112,23 +112,32 @@ header {
     display:block;
     width:100%;
   }
-
 }
 
-/* PC時の見え方安定 */
-@media (min-width: 769px) {
-  .hero img {
-    max-height: 600px;   /* PC画像サイズに合わせる */
-    object-fit: cover;
-  }
+/* =========================
+   HERO PC/SP切替
+========================= */
+
+.hero-video{
+  display:block;
+  width:100%;
 }
 
-/* スマホ */
-@media (max-width: 768px) {
-  .hero img {
-    max-height: 1000px;  /* SP画像サイズに合わせる */
-    object-fit: cover;
+.hero-sp{
+  display:none;
+  width:100%;
+}
+
+@media screen and (max-width:768px){
+
+  .hero-video{
+    display:none !important;
   }
+
+  .hero-sp{
+    display:block !important;
+  }
+
 }
 
 /* =========================
